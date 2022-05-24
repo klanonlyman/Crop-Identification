@@ -12,7 +12,7 @@ import random
 import torch
 from tqdm import tqdm
 import matplotlib.pyplot as plt
-def read_split_data(root: str, val_rate: float = 0.):
+def data_reader(root: str, val_rate: float = 0.):
     random.seed(0)
     assert os.path.exists(root), "dataset not exist."
     flower_class=[]

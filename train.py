@@ -14,7 +14,7 @@ from torchvision import transforms
 
 from my_dataset import MyDataSet
 from model import swin_large_patch4_window12_384_in22k as create_model
-from utils import read_split_data,one_epoch, evaluate
+from utils import data_reader,one_epoch, evaluate
 
 if __name__ == '__main__':
   data_path="train"
@@ -31,7 +31,7 @@ if __name__ == '__main__':
       os.makedirs("./weights")
       
   tb_writer = SummaryWriter()
-  train_images_path, train_images_label = read_split_data(data_path)
+  train_images_path, train_images_label = data_reader(data_path)
   img_size = 384
   data_transform = {
       "train": transforms.Compose([transforms.RandomResizedCrop(img_size),

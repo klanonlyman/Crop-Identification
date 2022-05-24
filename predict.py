@@ -33,12 +33,12 @@ def test():
     class_indict = json.load(json_file)
     model = create_model(num_classes=num_classes).to(device)
     
-    list_= ['8','9','10','11','12','13','14','15','16','17']
+    list_= ['0','1','2','3']
     for item in list_:
         print("model: %s\n"%item)
         model_name = 'model-%s'%item
         
-        # load model weights
+    
         model_weight_path = "./weights/%s.pth"%model_name
         model.load_state_dict(torch.load(model_weight_path, map_location=device))
         model.eval()

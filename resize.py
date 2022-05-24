@@ -21,20 +21,5 @@ for sub_floder in floder:
         out.save(image_path.replace("data","train"))
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 
 

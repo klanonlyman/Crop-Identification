@@ -15,16 +15,14 @@
 
 </br>
 執行程式碼的事前準備: </br>
-1.將原始的訓練資料放入名為data的資料夾，如圖: </br>
+1.將原始的訓練資料放入名為train的資料夾，如圖: </br>
 
 ![image](https://user-images.githubusercontent.com/103729404/169832361-f835b795-85a5-4b3a-94f0-b3c82eeef7eb.png)
 
 2.在此資料夾新增名為result的資料夾</br>
-3.在此資料夾新增名為train的資料夾，裡面會放resize後的圖片，如圖:</br>
 
-![image](https://user-images.githubusercontent.com/103729404/169832396-df156029-be1d-4fdc-9b04-53cfc0e85f5c.png)
 
-4.在此資料夾新增名為test的資料夾，裡面是原始的圖片，如圖:</br>
+3.在此資料夾新增名為test的資料夾，裡面是原始的圖片，如圖:</br>
 
 ![image](https://user-images.githubusercontent.com/103729404/169832433-946b0817-6036-4d4b-b937-4bf7e2d8b58b.png)
 
@@ -34,9 +32,8 @@
 
 
 code 執行流程:</br>
-  1. resize.py (會把原始資料resize成384*384到train的資料夾底下) </br>
-  2. train.py (開始訓練model) </br>
-  3. predict.py (輸出結果為result.csv) </br>
+  1. train.py (開始訓練model) </br>
+  2. predict.py (輸出結果為result.csv) </br>
 
 
 
